@@ -21,7 +21,7 @@ const Auth = () => {
   const [transactionId, setTransactionId] = useState("");
 
   const handleDeveloperLogin = async () => {
-    router.push("/");
+    router.back();
   };
 
   const handleUserClick = () => {
