@@ -86,7 +86,7 @@ const DeveloperLogin = () => {
       functionName: funcName,
       params: params,
     };
-    const link = `http://localhost:3000/execute-transaction?transactionId=${encryptData(
+    const link = `${process.env.BASE_URL}/execute-transaction?transactionId=${encryptData(
       transactionData
     )}`;
     setTransactionLink(link);
